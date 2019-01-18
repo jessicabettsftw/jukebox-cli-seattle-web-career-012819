@@ -62,5 +62,5 @@ def run(songs)
     else 
       puts "Invalid input, Please try again"
     end
-    exit
+  end
 end
