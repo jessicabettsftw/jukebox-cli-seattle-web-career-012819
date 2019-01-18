@@ -19,7 +19,7 @@ def play(songs)
   puts choice
   if songs.include? choice
     puts songs
-  elsif choice.is_a? Integer
+  elsif Integer(choice)
     if choice > 0 && choice < songs.length + 1
       puts "hi"
     end
