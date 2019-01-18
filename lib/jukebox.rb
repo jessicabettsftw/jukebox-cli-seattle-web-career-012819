@@ -22,7 +22,7 @@ def play(songs)
     is_int = Integer(choice) rescue nil
     if (is_int != nil)
       if (is_int > 0) && (is_int < (songs.length + 1))
-        puts "hi"
+        puts songs[is_int + 1]
       else
         puts "Invalid input, please try again"
       end  
