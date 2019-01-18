@@ -22,7 +22,7 @@ def play(songs)
   else 
     is_int = Integer(choice)
     if (is_int != nil)
-      if (choice > 0) && choice < songs.length + 1
+      if (choice > 0) && (choice < (songs.length + 1))
         puts "hi"
       end
     else
