@@ -58,7 +58,9 @@ def run(songs)
       play(songs)
     elsif user_input.downcase == "exit"
       exit_jukebox()
-      exit
+      keep_going = false
     else 
-      puts ""
+      puts "Invalid input, Please try again"
+    end
+    exit
 end
