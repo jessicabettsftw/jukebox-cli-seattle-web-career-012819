@@ -10,3 +10,37 @@ songs = [
   "Amos Lee - Keep It Loose, Keep It Tight"
 ]
 
+def help()
+  puts "(?=.*help)(?=.*list)(?=.*play)(?=.*exit)"
+end
+
+def play(songs)
+  choice = gets.chomp
+  puts choice
+  if songs.include? choice
+    puts songs
+  elsif choice.is_a? Integer
+    if choice > 0 && choice < songs.length + 1
+      puts "hi"
+    end
+  else
+    puts "Invalid input, please try again"
+  end
+end
+
+def list(songs)
+  i = 0
+  while i < songs.length do
+    puts "#{i + 1}. #{songs[i]}"
+    i += 1
+  end
+  
+end
+
+def exit()
+  
+end
+
+def run()
+  
+end
