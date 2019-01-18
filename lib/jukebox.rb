@@ -24,7 +24,10 @@ def play(songs)
     if (is_int != nil)
       if (choice > 0) && (choice < (songs.length + 1))
         puts "hi"
-      end
+      else
+        puts "Invalid input, please try again"
+      end  
+      
     else
       puts "Invalid input, please try again"
     end
