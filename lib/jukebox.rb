@@ -11,7 +11,10 @@ songs = [
 ]
 
 def help()
-  puts "(?=.*help)(?=.*list)(?=.*play)(?=.*exit)"
+  puts "- help: displays this help setting"
+  puts "- list: displays a list of songs you can play" 
+  puts "- play: lets you choose a song to play"
+  puts "- exit: exits this program"
 end
 
 def play(songs)
