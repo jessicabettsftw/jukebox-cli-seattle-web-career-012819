@@ -59,5 +59,6 @@ def run(songs)
     elsif user_input.downcase == "exit"
       exit_jukebox()
       exit
-    
+    else 
+      puts ""
 end
