@@ -19,12 +19,13 @@ def play(songs)
   puts choice
   if songs.include? choice
     puts songs
-  else Integer(choice)
+  else 
+    is_int = Integer(choice)
     if choice > 0 && choice < songs.length + 1
       puts "hi"
+    else
+      puts "Invalid input, please try again"
     end
-  else
-    puts "Invalid input, please try again"
   end
 end
 
