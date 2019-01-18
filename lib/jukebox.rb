@@ -56,7 +56,7 @@ def run(songs)
     if user_input.downcase == "help"
       help()
     elsif user_input.downcase == "list"
-      list()
+      list(songs)
     elsif user_input.downcase == "play"
       play(songs)
     elsif user_input.downcase == "exit"
