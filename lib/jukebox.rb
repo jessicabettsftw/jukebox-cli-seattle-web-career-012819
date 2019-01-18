@@ -16,7 +16,6 @@ end
 
 def play(songs)
   choice = gets.chomp
-  puts choice
   if songs.include? choice
     puts songs
   else 
