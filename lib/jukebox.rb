@@ -20,7 +20,7 @@ def play(songs)
   if songs.include? choice
     puts songs
   else 
-    is_int = Integer(choice)
+    is_int = Integer(choice) rescue nil
     if (is_int != nil)
       if (choice > 0) && (choice < (songs.length + 1))
         puts "hi"
